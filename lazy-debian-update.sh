@@ -32,7 +32,7 @@ read -p "enter your choice  "  type
  elif [[ "$type" -eq "2" ]]; then 
         (sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y) 
 
- elif [[ "$type" -eq "3" ]]; then 
-	(sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y) 
+ elif [[ "$type" -eq "3" ]] || [ "$type" -ge "3" ]; then 
+        (sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y) 
  
  fi
